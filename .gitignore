@@ -3,6 +3,7 @@ build.xml
 config/
 .idea/
 *.iml
+dist
 manifest_new.txt
 manifest_test.txt
 README.md
