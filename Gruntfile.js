@@ -9,8 +9,8 @@ module.exports = function(grunt) {
             target: {
                 files: {
                     'dist/css/ikaeasy.css': [
-                        'master/css/ikaeasy.css',
-                        //'master/css/ikalogs.css'
+                        'src/css/ikaeasy.css',
+                        //'src/css/ikalogs.css'
                     ]
                 }
             }
@@ -26,24 +26,24 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    'dist/inner/ikaeasy.js': ['master/inner/ikaeasy.js'],
-                    'dist/inner/background.min.js': ['master/inner/background.js'],
-                    //'dist/jquery.min.js': ['master/jquery.min.js'],
+                    'dist/inner/ikaeasy.js': ['src/inner/ikaeasy.js'],
+                    'dist/inner/background.min.js': ['src/inner/background.js'],
+                    //'dist/jquery.min.js': ['src/jquery.min.js'],
                     'dist/app.min.js': [
-                        'master/vendor/moment.js',
-                        'master/jquery.min.js',
-                        'master/vendor/jquery.countdown.min.js',
-                        'master/langs/*.js',
-                        "master/zJS/utils.js",
-                        "master/zJS/lng.js",
-                        "master/zJS/var.js",
-                        "master/zJS/db.js",
-                        "master/init.js",
-                        "master/ikalogs.js",
-                        'master/page/*.js',
-                        "master/hotkeysPlugin.js",
-                        "master/page/sendIKMessage.js",
-                        "master/zJS/navigation.js",
+                        'src/vendor/moment.js',
+                        'src/jquery.min.js',
+                        'src/vendor/jquery.countdown.min.js',
+                        'src/langs/*.js',
+                        "src/zJS/utils.js",
+                        "src/zJS/lng.js",
+                        "src/zJS/var.js",
+                        "src/zJS/db.js",
+                        "src/init.js",
+                        "src/ikalogs.js",
+                        'src/page/*.js',
+                        "src/hotkeysPlugin.js",
+                        "src/page/sendIKMessage.js",
+                        "src/zJS/navigation.js",
                     ]
                 }
             }
@@ -52,14 +52,14 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     // includes files within path
-                    //{expand: true, src: ['master/icon/*'], dest: 'dist/icon/', filter: 'isFile'},
+                    //{expand: true, src: ['src/icon/*'], dest: 'dist/icon/', filter: 'isFile'},
 
                     // includes files within path and its sub-directories
-                    //{expand: true, src: ['master/icon/**'], dest: 'dist/icon/'},
+                    //{expand: true, src: ['src/icon/**'], dest: 'dist/icon/'},
 
                     //// makes all src relative to cwd
-                    {expand: true, cwd: 'master/icon/', src: ['**'], dest: 'dist/icon/'},
-                    {expand: true, cwd: 'master/images/', src: ['**'], dest: 'dist/images/'},
+                    {expand: true, cwd: 'src/icon/', src: ['**'], dest: 'dist/icon/'},
+                    {expand: true, cwd: 'src/images/', src: ['**'], dest: 'dist/images/'},
                     //
                     //// flattens results to a single level
                     //{expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'},
@@ -71,9 +71,9 @@ module.exports = function(grunt) {
             //    options: {
             //        '-W015': true,
             //    },
-            //    src: ['master/**/*.js']
+            //    src: ['src/**/*.js']
             //}
-            all: ['Gruntfile.js', 'master/**/*.js', '!master/jquery.min.js']
+            all: ['Gruntfile.js', 'src/**/*.js', '!src/jquery.min.js']
         }
         //watch: {
         //    files: ['<%= jshint.files %>'],

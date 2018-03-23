@@ -2,6 +2,7 @@ compiler.txt
 build.xml
 config/
 .idea/
+*.iml
 manifest_new.txt
 manifest_test.txt
 README.md

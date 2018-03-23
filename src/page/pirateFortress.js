@@ -67,7 +67,7 @@ zJS.Page.pirateFortress = {
             console.log("============= CountDown Finished! =======");
             self.enableShortcutButton();
 
-            //zJS.Page.pirateFortress.capturePirates(); //autoclicker
+            zJS.Page.pirateFortress.capturePirates(); //autoclicker
 
             if (Notification.permission !== "granted")
                 Notification.requestPermission();
@@ -127,7 +127,7 @@ zJS.Page.pirateFortress = {
             console.log('action!');
             zJS.Utils.execute_js("ajaxHandlerCall('" + self._pirateButtonStorage.url + "');");
             self.captureClicked(self._pirateButtonStorage.url);
-        }, 1000); // TODO set interval with checking
+        }, 10000); // TODO set interval with checking
     },
 
     _pirateShortcut: function(){

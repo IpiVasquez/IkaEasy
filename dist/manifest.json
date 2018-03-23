@@ -1,13 +1,13 @@
 {
     "manifest_version": 2,
-    "short_name": "IkaEasy",
+    "short_name": "IkaEasy Ipi's version",
     "background": {
         "scripts": ["inner/background.min.js"],
         "persistent": true
     },
     "page_action": {
         "default_icon": "icon/128.png",
-        "default_title": "ikariam"
+        "default_title": "ipi ikariam"
     },
     "content_scripts": [
         {
@@ -140,5 +140,5 @@
         "http://qip.ru/*",
         "http://*.qip.ru/*"
     ],
-    "version": "2.0.67"
+    "version": "2.0.68"
 }
